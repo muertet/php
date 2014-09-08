@@ -1,0 +1,24 @@
+#developArea {
+	width: 49%;
+	float: left;
+}
+#developArea button {
+	display: block;
+	height: 10%;
+	width: 18%;
+	float: right;
+	margin-right: 4%;
+}
+.CodeMirror {
+	margin: 2px;
+	height: 73%;
+	width: 96%;
+	border: 1px solid;
+}
+#result {
+	height: 96%;
+	width: 49%;
+	float: left;
+	border:1px solid;
+	padding: 10px;
+}
