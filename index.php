@@ -10,7 +10,7 @@ if (isset($_POST['code'])) {
 ?>
 <html>
 	<head>
-		<title>PHP 5.3.5 Execute , write code online</title>
+		<title>PHP execute, write code online</title>
 		<!--script src="http://code.jquery.com/jquery-1.9.1.min.js"></script-->
 		<script src="js/codemirror/codemirror.js"></script>
 		<link rel="stylesheet" href="js/codemirror/codemirror.css">

@@ -14,22 +14,22 @@ var php =
 		  if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {
 		    e.preventDefault();
 			 php.execute();
-		
-		
-		$('#execute-button').on('click',function () {
-			php.execute();
-		});  }
+		  }
 		}, false);
 		
+		$('#execute-button').on('click', function () {
+			php.execute();
+		});
+		
 		php.editor = CodeMirror.fromTextArea(document.getElementById("code"), {
-	        l	ineNumbers: true,
-		matchBrackets: true,
+	        lineNumbers: true,
+			matchBrackets: true,
 	        mode: "text/x-php",
 	        indentUnit: 4,
 	        indentWithTabs: true,
 	        enterMode: "keep",
-	 	       tabMode: "shift",
-		theme:'monokai',
+	 	    tabMode: "shift",
+			theme:'monokai',
 	      });
 	},
 	execute:function()
@@ -43,3 +43,7 @@ var php =
 		localStorage.setItem('code', code);
 		
 		$.post('', {code:code}, function(data) {
+			$('#result').html(data);
+		});
+	}	
+};
